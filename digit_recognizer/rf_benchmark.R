@@ -2,8 +2,8 @@
 
 library(randomForest)
 
-train <- read.csv("../data/train.csv", header=TRUE)
-test <- read.csv("../data/test.csv", header=TRUE)
+train <- read.csv("train.csv", header=TRUE)
+test <- read.csv("test.csv", header=TRUE)
 
 labels <- as.factor(train[,1])
 train <- train[,-1]
